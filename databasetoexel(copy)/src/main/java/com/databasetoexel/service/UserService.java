@@ -29,7 +29,7 @@ public class UserService {
 
 	@GetMapping("/data")
 	public String getdata() throws IOException {
-
+// ========================
 		List<UserEntity> data = userRepository.getall();
 		   File file= new File("E:\\mysqltoexel.xlsx");
 
@@ -65,5 +65,6 @@ public class UserService {
 		  fileInputStream.close();
 	        fileOutputStream.close();
 		return "data";
+		// ===============
 	}
 }
